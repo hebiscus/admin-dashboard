@@ -1,0 +1,60 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 8fr;
+    grid-template-areas: 
+    "sidebar header"
+    "sidebar main";
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+
+.sidebar {
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    background-image: url("images/sidebar-background.jpg");
+    background-position: center;
+    border-top: 1px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    -webkit-box-shadow: 2px 0px 20px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 2px 0px 20px 0px rgba(0, 0, 0, 1);
+    box-shadow: 2px 0px 20px 0px rgba(0, 0, 0, 1);
+}
+
+.menu, .home, .messages, .history, .tasks, .files, .settings, .support {
+    display: flex;
+    padding-left: 18px;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+.home-icon {
+    width: 40px;
+}
+
+.menu {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.home, .messages, .history, .tasks, .files, .settings, .support {
+    font-size: 1.9rem;
+}
+
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 8fr;
+    grid-template-areas: 
+    "sidebar header"
+    "sidebar main";
+}
+
+.main-panel {
+    grid-area: main;
+}
