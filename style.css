@@ -53,7 +53,6 @@ body {
     grid-template-areas: 
     "searchicon search . bellicon smallmarie marietexttop"
     "biggermarie marietextbottom . buttons buttons buttons";
-    height: 180px;
     margin-top: 15px;
     padding-left: 15px;
     padding-bottom: 15px;
@@ -63,8 +62,8 @@ body {
 .searchicon {
     grid-area: searchicon;
     width: 80px;
-    height: 50px;
-    margin-left: 40px;
+    height: 45px;
+    margin-left: 76px;
     padding-top: 10px;
 }
 
@@ -80,7 +79,7 @@ body {
 .bellicon {
     grid-area: bellicon;
     width: 80px;
-    height: 50px;
+    height: 45px;
     padding-top: 10px;
 }
 
@@ -136,4 +135,12 @@ button {
 
 .main-panel {
     grid-area: main;
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 100px 1fr 1fr;
+    grid-template-areas: 
+    ""
+    ""
+    "";
 }
+
