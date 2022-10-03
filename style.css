@@ -141,8 +141,8 @@ button {
 .main-panel {
     grid-area: main;
     display: grid;
-    grid-template-columns: 270px 1fr 300px;
-    grid-template-rows: 100px 1fr 0.2fr 1fr;
+    grid-template-columns: 280px 1fr 400px;
+    grid-template-rows: 90px 0.8fr 60px 1fr;
     grid-template-areas: 
     "projects-headline . announcements-headline"
     "notes-section notes-section announcements-section"
@@ -152,7 +152,7 @@ button {
 
 .projects-headline{
     grid-area: projects-headline;
-    margin-left: 40px;
+    margin-left: 50px;
     font-size: 1.6rem;
 }
 
@@ -166,7 +166,7 @@ button {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(2, 1fr);
-    margin-left: 40px;
+    margin-left: 50px;
 }
 
 div[class="note"] {
@@ -185,8 +185,8 @@ div[class="note"] {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: clamp(280px, 30%, 400px);
-    width: clamp(260px, 45%, 520px);
+    height: clamp(270px, 30%, 400px);
+    width: clamp(300px, 45%, 520px);
     border: 1px solid black;
     border-radius: 20px;
     -webkit-box-shadow: 0px 8px 27px -14px rgba(0, 0, 0, 1);
@@ -219,15 +219,73 @@ h4 {
     grid-area: trending-headline;
     font-size: 2.6rem;
     margin: 0;
+    margin-top: 10px;
 }
 
 .trending-section {
     grid-area: trending-section;
-    height: clamp(280px, 30%, 400px);
-    width: clamp(260px, 45%, 520px);
+    display: grid;
+    grid-template-columns: 0.9fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "charlespic charles"
+    "mariepic marie-a"
+    "subysspic subyss"
+    "louispic louis";
+    height: clamp(318px, 30%, 400px);
+    width: clamp(300px, 45%, 520px);
     border: 1px solid black;
     border-radius: 20px;
     -webkit-box-shadow: 0px 8px 27px -14px rgba(0, 0, 0, 1);
     -moz-box-shadow: 0px 8px 27px -14px rgba(0, 0, 0, 1);
     box-shadow: 0px 8px 27px -14px rgba(0, 0, 0, 1);
+}
+
+.trending-section > img {
+    height: 68px;
+    width: 68px;
+    border-radius: 50px;
+    margin-left: 40px;
+
+}
+
+.trending-section > div > p {
+    margin: 0;
+    margin-right: 20px;
+}
+
+.trending-section > div > p:first-child {
+    margin-top: 20px;
+}
+
+.charlespic {
+    grid-area: charlespic;
+    margin-top: 6px;
+}
+
+.mariepic{ 
+    grid-area: mariepic;
+}
+
+.subysspic{ 
+    grid-area: subysspic;
+}
+
+.louispic{
+    grid-area: louispic;
+} 
+
+.charles {
+    grid-area: charles;
+}
+
+.marie-a {
+    grid-area: marie-a;
+}
+
+.subyss {
+    grid-area: subyss;
+}
+.louis {
+    grid-area: louis;
 }
